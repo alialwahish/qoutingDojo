@@ -1,0 +1,9 @@
+<h1>Here's some Qouests</h1>
+<br>
+<a href="/"><button>Home</button> </a>
+
+@foreach(var user in ViewBag.qoutes){
+    <p>@user["qoute"]</p>
+    <span>@user["user"] at @user["created_at"]</span>
+    <p>___________________________________________</p>
+}
